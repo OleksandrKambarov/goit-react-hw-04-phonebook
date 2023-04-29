@@ -1,1 +1,0 @@
-export { defaulte } from './Filter';

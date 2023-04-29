@@ -1,23 +1,22 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styles from './Filter.module.css';
 
-import styles from './filter.module.css';
-
-const Filter = ({ value, onChange }) => {
+const Filter = ({ value, onFilter }) => {
   return (
     <input
-      className={styles.search}
       type="text"
       value={value}
-      placeholder="Search"
-      onChange={onChange}
+      placeholder="Filter"
+      onChange={onFilter}
+      className={styles.filter}
     />
   );
 };
 
 Filter.propTypes = {
   value: PropTypes.string.isRequired,
-  onChange: PropTypes.func.isRequired,
+  onFilter: PropTypes.func.isRequired,
 };
 
 export default Filter;
