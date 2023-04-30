@@ -12,12 +12,15 @@
   background-color: white;
   padding: 20px;
 }
+
 .item:not(:last-child) {
   margin-bottom: 20px;
 }
+
 .item:hover {
   background-color: rgb(176, 243, 229);
 }
+
 .button {
   cursor: pointer;
   border: none;
