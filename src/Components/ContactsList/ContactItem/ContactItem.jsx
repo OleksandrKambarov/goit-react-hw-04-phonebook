@@ -6,11 +6,11 @@ const ContactItem = ({ contacts, onDeleteClick }) =>
       <li key={id} className={styles.item}>
         {name}: {number}
         <button
-          className={styles.contacts_button}
+          className={styles.button}
           onClick={() => onDeleteClick(id)}
           type="button"
         >
-          Delete
+          x
         </button>
       </li>
     );
