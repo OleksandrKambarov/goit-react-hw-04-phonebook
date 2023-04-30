@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { v4 as uuidv4 } from 'uuid';
+import { nanoid } from 'nanoid';
 import MyForm from './Components/MyForm';
 import Filter from './Components/Filter';
 import ContactsList from './Components/ContactsList';
@@ -24,7 +24,7 @@ export default function App() {
 
   const onSubmitForm = ({ name, number }) => {
     const contact = {
-      id: uuidv4(),
+      id: nanoid(),
       name,
       number,
     };
