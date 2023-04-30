@@ -51,8 +51,8 @@ export default function App() {
     <>
       <h1>Phonebook</h1>
       <MyForm onSubmitForm={onSubmitForm} />
-      <Filter value={filter} onFilter={onFilterInput} />
       <h2>Contacts</h2>
+      <Filter value={filter} onFilter={onFilterInput} />
       <ContactsList
         contacts={onFilterChange()}
         onDeleteClick={onDeleteContactClick}
