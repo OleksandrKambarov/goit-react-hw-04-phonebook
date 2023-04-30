@@ -7,9 +7,9 @@ const Filter = ({ value, onFilter }) => {
     <input
       type="text"
       value={value}
-      placeholder="Filter"
+      placeholder="Search"
       onChange={onFilter}
-      className={styles.filter}
+      className={styles.search}
     />
   );
 };
